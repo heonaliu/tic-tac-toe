@@ -53,6 +53,13 @@ export default function App() {
   const winner = calculateWinner(squares); // checking if anyone won here
   const isDraw = !winner && squares.every(Boolean);
 
+  function handleClick(i) {
+    if (squares[i] || winner) return;
+    const next = [...squares]; // takes the copy
+    next[i] = current;
+    setSquares(next); // update the array again after clicking
+  }
+
   return (
     <>
       <h2>Hello, World!</h2>
