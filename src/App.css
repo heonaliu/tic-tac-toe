@@ -22,3 +22,11 @@ h1 {
   font-size: 1.3rem;
   min-height: 2rem;
 }
+
+.board {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 10px;
+  width: min(90vw, 360px);
+  margin: 16px auto;
+}
