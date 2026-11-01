@@ -64,6 +64,22 @@ export default function App() {
     setSquares(Array(9).fill(null)); // clear
   }
 
+  let status;
+  if (winner)
+    status = (
+      <>
+        {PLAYERS[winner.player].name} wins!{" "}
+        <PlayerIcon player={winner.player} />
+      </>
+    );
+  else if (isDraw) status = "Draw ! 🍂";
+  else
+    status = (
+      <>
+        Next: {PLAYERS[current].name} <PlayerIcon player={current} />
+      </>
+    );
+
   return (
     <>
       <main>
@@ -79,6 +95,8 @@ export default function App() {
             />
           ))}
         </div>
+        <div className="status">{status}</div>
+        <button onClick={resetGame}>Reset Game</button>
       </main>
     </>
   );
