@@ -20,3 +20,4 @@ https://fall-tac-toe.vercel.app/
 ## What I'm Proud of
 - some stuff like the css for the board i had to search up. But i typed it out so that I could understand each line i was writing
 - using animation in the css. hardly do i ever use this in css so this was really fun to try.
+- the art is all hand-drawn by me!
