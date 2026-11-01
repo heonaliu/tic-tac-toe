@@ -9,6 +9,7 @@
 ## Challenges I Faced
 - sometimes code doesn't have to be complicated if you just break up the functions into its own little chunks
 - wasn't exactly sure how to render a tic tac toe board with the css. I was able to add the classnames and things but wasn't sure what exact classes together would create the tictac toe board.
+- the squares css wasn't rendering because I put a condition int he class name and forgot to put the other classname which was kind of a condition before it.
 
 ## Things I Learned
 - You can isolate X and O by using 1s and 0s to isolate truthy and falsy values
