@@ -1,5 +1,7 @@
 import { useState } from "react";
 import "./App.css";
+import leaf from "./leaf.png";
+import pumpkin from "./pumpkin.png";
 
 // these are all the ways you can win
 // imagining a grid 0-8 like this:
@@ -18,8 +20,8 @@ const LINES = [
 ];
 
 const PLAYERS = {
-  X: { name: "Leaf", icon: "🍂" },
-  O: { name: "Pumpkin", icon: "🎃" },
+  X: { name: "Leaf", icon: leaf },
+  O: { name: "Pumpkin", icon: pumpkin },
 };
 
 function calculateWinner(squares) {
@@ -32,7 +34,11 @@ function calculateWinner(squares) {
 }
 
 function PlayerIcon({ player }) {
-  return <span className="icon">{PLAYERS[player].icon}</span>;
+  return (
+    <span className="icon">
+      <img src={PLAYERS[player].icon} alt={PLAYERS[player].name} />
+    </span>
+  );
 }
 
 function Square({ value, onClick, isWinning }) {
