@@ -35,12 +35,12 @@ function PlayerIcon({ player }) {
   return <span className="icon">{PLAYERS[player].icon}</span>;
 }
 
-function Square({value, onClick, isWinning}) {
+function Square({ value, onClick, isWinning }) {
   return (
     <button onClick={onClick} className={isWinning ? "winning" : ""}>
       {value && <PlayerIcon player={value} />}
     </button>
-  )
+  );
 }
 
 function App() {
