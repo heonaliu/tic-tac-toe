@@ -44,11 +44,15 @@ function Square({ value, onClick, isWinning }) {
 }
 
 export default function App() {
-  const [squares, setSquares] = useState(Array(9).fill(null))
-  
+  const [squares, setSquares] = useState(Array(9).fill(null));
 
+  const xNext = squares.filter(Boolean).length % 2 === 0;
+  // this finds whos turn is it. By filtering by boolean, it keeps only the truthy values in the array
 
-  
+  const current = xNext ? "X" : "O"; // decides which symbol to put down
+  const winner = calculateWinner(squares); // checking if anyone won here
+  const isDraw = !winner && squares.every(Boolean);
+
   return (
     <>
       <h2>Hello, World!</h2>

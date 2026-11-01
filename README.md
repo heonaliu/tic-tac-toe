@@ -10,7 +10,7 @@
 - sometimes code doesn't have to be complicated if you just break up the functions into its own little chunks
 
 ## Things I Learned
-- 
+- You can isolate X and O by using 1s and 0s to isolate truthy and falsy values
 
 ## What I'm Proud of
 -
