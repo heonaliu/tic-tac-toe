@@ -51,13 +51,13 @@ h1 {
 
 .square.winning {
   background: #f6b04a;
-  transform: scale(1.05);
+  transform: scale(1.01);
   animation: pulse 0.8s ease-in-out infinite alternate
 }
 
 @keyframes pulse {
   to {
-    transform: scale(1.1);
+    transform: scale(1.03);
   }
 }
 
