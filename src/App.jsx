@@ -1,7 +1,7 @@
 import { useState } from "react";
 import "./App.css";
-import leaf from "/Users/heona/Documents/Projects-Summer/tic-tac-toe/src/assets/leaf.png";
-import pumpkin from "/Users/heona/Documents/Projects-Summer/tic-tac-toe/src/assets/pumpkin.png";
+import leaf from "./assets/leaf.png";
+import pumpkin from "./assets/pumpkin.png";
 
 // these are all the ways you can win
 // imagining a grid 0-8 like this:
