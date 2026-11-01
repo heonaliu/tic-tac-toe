@@ -43,12 +43,15 @@ function Square({ value, onClick, isWinning }) {
   );
 }
 
-function App() {
+export default function App() {
+  const [squares, setSquares] = useState(Array(9).fill(null))
+  
+
+
+  
   return (
     <>
       <h2>Hello, World!</h2>
     </>
   );
 }
-
-export default App;
