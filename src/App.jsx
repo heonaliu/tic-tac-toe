@@ -61,12 +61,25 @@ export default function App() {
   }
 
   function resetGame() {
-    setSquares(Array(9).fill(null));  // clear
+    setSquares(Array(9).fill(null)); // clear
   }
 
   return (
     <>
-      <h2>Hello, World!</h2>
+      <main>
+        <h1>Fall Tac Toe</h1>
+
+        <div className="board">
+          {squares.map((value, i) => (
+            <Square
+              key={i}
+              value={value}
+              onClick={() => handleClick(i)}
+              isWinning={winner?.line.includes(i)}
+            />
+          ))}
+        </div>
+      </main>
     </>
   );
 }
