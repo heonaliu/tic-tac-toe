@@ -30,6 +30,11 @@ function calculateWinner(squares) {
   }
   return null;
 }
+
+function PlayerIcon({ player }) {
+  return <span className="icon">{PLAYERS[player].icon}</span>;
+}
+
 function App() {
   return (
     <>
