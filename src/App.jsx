@@ -37,7 +37,7 @@ function PlayerIcon({ player }) {
 
 function Square({ value, onClick, isWinning }) {
   return (
-    <button onClick={onClick} className={isWinning ? "winning" : ""}>
+    <button onClick={onClick} className={`square ${isWinning ? "winning" : ""}`}>
       {value && <PlayerIcon player={value} />}
     </button>
   );
