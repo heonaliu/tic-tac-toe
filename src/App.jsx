@@ -60,6 +60,10 @@ export default function App() {
     setSquares(next); // update the array again after clicking
   }
 
+  function resetGame() {
+    setSquares(Array(9).fill(null));  // clear
+  }
+
   return (
     <>
       <h2>Hello, World!</h2>
