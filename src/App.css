@@ -48,3 +48,15 @@ h1 {
   background: #ffe9c7;
   transform: translateY(-2px);
 }
+
+.square.winning {
+  background: #f6b04a;
+  transform: scale(1.05);
+  animation: pulse 0.8s ease-in-out infinite alternate;
+}
+
+@keyframes pulse {
+  to {
+    transform: scale(1.1);
+  }
+}
