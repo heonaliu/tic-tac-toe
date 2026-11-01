@@ -52,7 +52,7 @@ h1 {
 .square.winning {
   background: #f6b04a;
   transform: scale(1.01);
-  animation: pulse 0.8s ease-in-out infinite alternate
+  animation: pulse 0.8s ease-in-out infinite alternate;
 }
 
 @keyframes pulse {
@@ -72,5 +72,4 @@ button {
 }
 button:hover {
   background-color: #ca6826;
-
 }
